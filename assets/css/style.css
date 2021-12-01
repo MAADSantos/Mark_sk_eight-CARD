@@ -29,12 +29,10 @@ body {
   background: linear-gradient(
     to right bottom,
     rgba(13, 145, 150, 0.7),
-    rgba(255, 255, 255, 0.849)
-  );
+    rgba(255, 255, 255, 0.849));
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  
 }
 
 .pic {
