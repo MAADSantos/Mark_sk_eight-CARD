@@ -38,7 +38,7 @@ body {
 .pic {
   width: 150px;
   height: 150px;
-  border: solid black;
+  /* border: solid black; */
   border-radius: 75px;
   box-shadow: 0 1px 15px rgb(13, 117, 124);
   z-index: 1;
