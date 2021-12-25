@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+:root{
+  /* Text color */
+  --color-text: black;
+
+  /* Background*/
+  --bg: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.555),
+    rgba(118, 224, 228, 0.7)
+  ); ;
+
+  /* Box color*/
+  --bg-box: linear-gradient(
+    to right bottom,
+    rgba(13, 145, 150, 0.7),
+    rgba(255, 255, 255, 0.849)
+  ); ;
+
+  /* Hovered color*/
+  --hover: #fff;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,11 +31,7 @@ body {
   align-items: center;
   height: 100vh;
   min-height: 80vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.555),
-    rgba(118, 224, 228, 0.7)
-  );
+  background: var(--bg);
   backdrop-filter: blur(2rem);
   display: flex;
   z-index: 2;
@@ -26,10 +44,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(
-    to right bottom,
-    rgba(13, 145, 150, 0.7),
-    rgba(255, 255, 255, 0.849));
+  background: var(--bg-box);
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -45,7 +60,7 @@ body {
 }
 
 .name h1 {
-  color: black;
+  color: var(--color-text);
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
@@ -61,7 +76,7 @@ body {
   width: 50px;
   height:50px;
   font-size: 24px;
-  color: black;
+  color: var(--color-text);
   cursor: pointer;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   font-size: 35px;
@@ -81,7 +96,7 @@ body {
 }
 
 .linkholder a:hover{
-  color: #fff;
+  color: var(--hover);
   transform:scale(1.5,1.5);
   text-shadow:0 5px 15px rgb(8, 132, 151);
 }
